@@ -5,26 +5,39 @@ import torch
 app = Flask(__name__)
 
 # Load model ONCE (important for performance)
-MODEL_NAME = "distilgpt2"   # SAFE DEFAULT
+MODEL_NAME = "distilgpt2"  # SAFE DEFAULT
 
+print(f"Loading model {MODEL_NAME}... This may take a moment.")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
+print("Model loaded successfully!")
 
 def generate_response(user_input):
-    inputs = tokenizer.encode(user_input, return_tensors="pt")
+    """
+    Generate a response from the model based on the user input.
+    """
+    prompt = f"""
+You are a friendly chatbot that gives short, clear answers.
 
-    with torch.no_grad():
-        outputs = model.generate(
-            inputs,
-            max_length=100,
-            pad_token_id=tokenizer.eos_token_id,
-            do_sample=True,
-            top_k=50,
-            top_p=0.95
-        )
+User: {user_input}
+Bot:
+"""
+
+    inputs = tokenizer(prompt, return_tensors="pt")
+
+    outputs = model.generate(
+        inputs["input_ids"],
+        max_new_tokens=50,
+        do_sample=True,
+        temperature=0.7,
+        top_p=0.9,
+        pad_token_id=tokenizer.eos_token_id
+    )
 
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    return response
+    bot_reply = response.split("Bot:")[-1].strip()
+
+    return bot_reply
 
 
 @app.route("/")
@@ -45,4 +58,5 @@ def chat():
 
 
 if __name__ == "__main__":
+    # Set debug=False if deploying to production
     app.run(debug=True)

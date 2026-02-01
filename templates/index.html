@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chatbox {
+            background: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .response {
+            margin-top: 15px;
+            color: #333;
+            min-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chatbox">
+        <h2>Transformer Chatbot</h2>
+        <input id="msg" type="text" placeholder="Type a message..." />
+        <button onclick="send()">Send</button>
+        <div class="response" id="response"></div>
+    </div>
+
+    <script>
+        async function send() {
+            const msg = document.getElementById("msg").value;
+            const resDiv = document.getElementById("response");
+
+            if (!msg.trim()) {
+                resDiv.innerText = "Say something, don’t be shy 🙂";
+                return;
+            }
+
+            resDiv.innerText = "Thinking... 🤖";
+
+            try {
+                const res = await fetch("/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message: msg })
+                });
+
+                const data = await res.json();
+                resDiv.innerText = data.response || "Oops! Something went wrong.";
+            } catch (err) {
+                resDiv.innerText = "Error connecting to server.";
+            }
+
+            document.getElementById("msg").value = "";
+        }
+    </script>
+</body>
+</html>
