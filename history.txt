@@ -1,0 +1,212 @@
+    1  git clone https://github.com/niya-benny/Simple_Blog_Title_Generator.git
+    2  cd Simple_Blog_Title_Generator
+    3  git status
+    4  git add app.py
+    5  touch app.py
+    6  git status
+    7  git add .
+    8  git status
+    9  git commit -m "create app.py"
+   10  git log
+   11  git config --global user.name "niya-benny"
+   12  git config --global user.email "niyabenny2004@gmail.com"
+   13  git log
+   14  git push origin main
+   15  git push origin main
+   16  git push origin main
+   17  git push origin main
+   18  git status
+   19  cd ~
+   20  cd GitProject/Simple_Blog_Title_Generator
+   21  cd GitProjects/Simple_Blog_Title_Generator
+   22  git status
+   23  git status
+   24  git add .
+   25  git commit -m "add code"
+   26  git status
+   27  git add .
+   28  git commit -m "updation in code1"
+   29  git status
+   30  git push origin main
+   31  git add .
+   32  git commit -m "add file history.txt"
+   33  doskey /history >> history.txt
+   34  git push origin main
+   35  git pull origin main --rebase
+   36  git status
+   37  git add .
+   38  git commit -m "modify history.txt"
+   39  git pull origin main --rebase
+   40  git push origin main
+   41  history >> history.txt
+   42  fit status
+   43  git status
+   44  git add .
+   45  git add .
+   46  git commit -m "modify history.txt"
+   47  git push origin main
+   48  git pull origin main --rebase
+   49  git status
+   50  cd ~
+   51  cd Users\lenovo\GitProjects\Simple_Blog_Title_Generator
+   52  cd lenovo\GitProjects\Simple_Blog_Title_Generator
+   53  cd GitProjects\Simple_Blog_Title_Generator
+   54  cd GitProjects
+   55  cd Simple_Blog_Title_Generator
+   56  git status
+   57  git add .
+   58  git commit -m "changes in code to improve the performance"
+   59  git push origin main
+   60  git status
+   61  git status
+   62  git pull origin main --rebase
+   63  git status
+   64  history >> history.txt
+   65  cd ~
+   66  cd GitProjects
+   67  cd SimpleTitleGenerator
+   68  cd BlogTitleGenerator
+   69  cd Simple_Blog_Title_Generator
+   70  git status
+   71  git add .
+   72  git commit -m "update history.txt"
+   73  git push origin main
+   74  git pull origin main --rebase
+   75  git status
+   76  history >> history.txt
+   77  git add .
+   78  git commit -m "update history.txt"
+   79  git status
+   80  cd C:\Users\lenovo\GitProjects\Simple_Blog_Title_Generator
+   81  cd ~
+   82  cd GitProjects\Simple_Blog_Title_Generator
+   83  cd Users
+   84  cd GitProjects
+   85  cd Simple_Blog_Title_Generator
+   86  git status
+   87  git status
+   88  git add .
+   89  git commit -m "use grok"
+   90  git push origin main
+   91  git reset --soft HEAD~1
+   92  echo ".env" >> .gitignore
+   93  git add .
+   94  git commit -m "use grok"
+   95  git push origin main
+   96  git status
+   97  git pull origin main --rebase
+   98  git status
+   99  history >> history.txt
+  100  git status
+  101  git add .
+  102  git commit -m "update history.txt"
+  103  cd ~
+  104  cd GitProjects/Simple_Blog_Title_Generator
+  105  git pull origin main --rebase
+  106  git pull origin main --rebase
+  107  history >> history.txt
+  108  git push origin main
+  109  git status
+  110  git add .
+  111  git commit -m "update history.txt"
+  112  git push origin main
+  113  cd C:\Users\lenovo\GitProjects\Object_detection
+  114  cd Gitprojects
+  115  cd Object_detection
+  116  gti status
+  117  git status
+  118  git add .
+  119  git commit -m "add files"
+  120  git push origin main
+  121  git clone https://github.com/niya-benny/Object_detection_YOLOv8
+  122  git status
+  123  git add .
+  124  git commit -m "add files"
+  125  git status
+  126  cd ~
+  127  cd GitProjects
+  128  cd Object_detection_YOLOv8
+  129  git status
+  130  git pull origin main --rebase
+  131  git status
+  132  source .venv/Scripts/activate
+  133  git add .
+  134  git commit -m "update code"
+  135  git push origin main
+  136  hitsory >> history.txt
+  137  history >> history.txt
+  138  git add .
+  139  git commit -m "update history.txt"
+  140  git push origin main
+  141  git status
+  142  git pull origin main --rebase
+  143  git pull origin main --rebase
+  144  git pull origin main --rebase
+  145  git add .
+  146  git commit -m "add yolov8l"
+  147  git push origin main
+  148  cd ~
+  149  cd GitProjects
+  150  cd Fashion_MNIST_CNN
+  151  git clone https://github.com/niya-benny/Fashion_MNIST_CNN
+  152  git ststus
+  153  git status
+  154  cd Fashion_MNIST_CNN
+  155  git status
+  156  git add .
+  157  git commit -m "create folder"
+  158  git add .
+  159  git commit -m "create model_training.ipynb"
+  160  git push origin main
+  161  git add .
+  162  git commit "update code"
+  163  git commit -m "update code"
+  164  git push origin main
+  165  git add .
+  166  git commit -m "add main.py"
+  167  git push origin main
+  168  history >> history.txt
+  169  git add .
+  170  git commit -m "add history.txt"
+  171  git push origin main
+  172  cd GitProjects
+  173  cd Fashion_MNIST_CNN
+  174  cd FASHION_MNIST_CNN
+  175  git status
+  176  git add .
+  177  git commit -m "delete main.ipynb"
+  178  git push origin main
+  179  history >> history.txt
+  180  git add .
+  181  git commit -m "update history.txt"
+  182  git push origin main
+  183  git status
+  184  cd GitProjects
+  185  git clone https://github.com/niya-benny/Chatbot_using_Transformers
+  186  git status
+  187  cd Chatbot_using_Transformers
+  188  git status
+  189  git pull origin main --rebase
+  190  cd GitProjects
+  191  cd Chatbot_using_Transformers
+  192  git status
+  193  git add .
+  194  git commit -m "update code"
+  195  git status
+  196  git push origin main
+  197  git add .
+  198  git commit -m "train model"
+  199  git push origin main
+  200  git rm -r --cached chatbot_model
+  201  git add .
+  202  git commit -m "train model"
+  203  git push origin main
+  204  git reset --soft $(git commit-tree HEAD^{tree} -m "Initial clean commit")
+  205  git add .
+  206  git commit -m "Initial clean commit (model excluded)"
+  207  git push origin main --force
+  208  git ls-files | findstr chatbot_model
+  209  git add .
+  210  git commit -m "update code"
+  211  git push origin main
+  212  history >> history.txt
