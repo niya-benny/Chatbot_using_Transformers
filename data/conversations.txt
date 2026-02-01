@@ -1,0 +1,5 @@
+hi	hello!
+how are you	i am doing well, thanks!
+what is ai	artificial intelligence is the simulation of human intelligence
+who created you	i was created using transformer models
+bye	goodbye, have a nice day
